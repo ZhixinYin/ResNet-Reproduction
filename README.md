@@ -44,6 +44,8 @@ tiny-imagenet-200 is used as the dataset in this reproduction. Validation set is
 | Training accuracy | 85.46% |
 | Test accuracy     | 54.72% |
 
+![](image/TrainingAccuracy.png)
+
 ## Discussion
 This network has many 3 * 3 convs, which is VGG-style. Compared with VGG11 and VGG16 we implemented earlier, we found that ResNet converges in fewer epochs(30 vs 40), which is expected, as residual connection enables preserving gradient magnitude and preventing vanishing gradients.
 
